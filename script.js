@@ -42,6 +42,16 @@ buttons.forEach((button) => {
     });
 });
 
+// random color function
+function generateRandomColor(){
+    let maxVal = 0xFFFFFF;
+    let randomNumber = Math.random() * maxVal; 
+    randomNumber = Math.floor(randomNumber);
+    randomNumber = randomNumber.toString(16);
+    let randColor = randomNumber.padStart(6, 0);   
+    return `#${randColor.toUpperCase()}`;
+}
+
 // Mouseover eventListener for trail effect => transformed to function
 // and moved listener to buildGrid function
 let trailDrawer = () => {
@@ -49,9 +59,11 @@ let trailDrawer = () => {
 
     gridElements.forEach((element) => {
         element.addEventListener('mouseover', () => {
-            element.classList.add('gridTrail');
+//            element.classList.add('gridTrail');        // before extra credit version
+            element.style.cssText = 'background-color: ' + generateRandomColor() + ';';
         });
     });
 }
+
 
 buildGrid(16);
