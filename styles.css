@@ -1,0 +1,22 @@
+#container {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+    border: solid 1px red;
+    gap: 3px;
+    padding: 3px;
+}
+
+.rowElement {
+    display: flex;
+    flex: 1 1 auto;
+    gap: 3px;
+}
+
+.columnElement {
+    display: flex;
+    flex-direction: row;
+    flex: 1 1 auto;
+    border: solid 1px black;
+    aspect-ratio: 1/1;
+}
