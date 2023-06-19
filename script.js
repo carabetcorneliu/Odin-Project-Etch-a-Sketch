@@ -20,3 +20,12 @@ function buildGrid(x) {
 }
 
 buildGrid(16);
+
+// Mouse over eventListener for trail effect
+const gridElements = document.querySelectorAll('.columnElement');
+
+gridElements.forEach((element) => {
+    element.addEventListener('mouseover', () => {
+        element.classList.add('gridTrail');
+    });
+});

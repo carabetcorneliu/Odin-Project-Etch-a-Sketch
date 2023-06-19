@@ -20,3 +20,8 @@
     border: solid 1px black;
     aspect-ratio: 1/1;
 }
+
+.gridTrail {
+    background-color: aqua;
+    opacity: 30%;
+}
