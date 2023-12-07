@@ -61,6 +61,7 @@ let trailDrawer = () => {
         element.addEventListener('mouseover', () => {
 //            element.classList.add('gridTrail');        // before extra credit version
             element.style.cssText = 'background-color: ' + generateRandomColor() + ';';
+ //           element.style.opacity += '0.1';
         });
     });
 }
